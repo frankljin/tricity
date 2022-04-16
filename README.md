@@ -1,4 +1,4 @@
-#### Tricity Website Project
+# Tricity Website Project
 
 To begin, open two tabs in your terminal.
 
