@@ -1,70 +1,72 @@
 import { makeStyles } from "@material-ui/styles"
-import { useState } from 'react';
+// import { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { ToastContainer, toast } from 'react-toastify';
-import emailjs from 'emailjs-com';
+// import { ToastContainer, toast } from 'react-toastify';
+//
+// import emailjs from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.min.css';
 
 import { Grid, TextField, Button, CardContent, Typography } from '@material-ui/core';
 function ContactForm() {
     const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors }
+    // register,
+    // handleSubmit,
+    //reset,
+    // formState: { errors }
     } = useForm();
-    const [disabled, setDisabled] = useState(false);
+    // const [disabled, setDisabled] = useState(false);
 
     // Function that displays a success toast on bottom right of the page when form submission is successful
-    const toastifySuccess = () => {
-        toast('Form sent!', {
-        position: 'bottom-right',
-        autoClose: 5000,
-        hideProgressBar: true,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: false,
-        className: 'submit-feedback success',
-        toastId: 'notifyToast'
-        });
-    };
-    const onSubmit = async (data) => {
-    // Destrcture data object
-    const { name, email, subject, message } = data;
-    try {
-      // Disable form while processing submission
-      setDisabled(true);
+    // const toastifySuccess = () => {
+    //     toast('Form sent!', {
+    //     position: 'bottom-right',
+    //     autoClose: 5000,
+    //     hideProgressBar: true,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: false,
+    //     className: 'submit-feedback success',
+    //     toastId: 'notifyToast'
+    //     });
+    // };
+    // const onSubmit = async (data) => {
 
-      // Define template params
-      const templateParams = {
-        name,
-        email,
-        subject,
-        message
-      };
+    // // Destrcture data object
+    // const { name, email, subject, message } = data;
+    // try {
+    //   // Disable form while processing submission
+    //   setDisabled(true);
 
-      // Use emailjs to email contact form data
-      await emailjs.send(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        templateParams,
-        process.env.REACT_APP_USER_ID
-      );
+    //   // Define template params
+    //   const templateParams = {
+    //     name,
+    //     email,
+    //     subject,
+    //     message
+    //   };
 
-      // Reset contact form fields after submission
-      reset();
-      // Display success toast
-      toastifySuccess();
-      // Re-enable form submission
-      setDisabled(false);
-    } catch (e) {
-      console.log(e);
-    }
-  };
+    //   // Use emailjs to email contact form data
+    //   await emailjs.send(
+    //     process.env.REACT_APP_SERVICE_ID,
+    //     process.env.REACT_APP_TEMPLATE_ID,
+    //     templateParams,
+    //     process.env.REACT_APP_USER_ID
+    //   );
+
+    //   // Reset contact form fields after submission
+    //   reset();
+    //   // Display success toast
+    //   toastifySuccess();
+    //   // Re-enable form submission
+    //   setDisabled(false);
+    // } catch (e) {
+    //   console.log(e);
+    // }
+  //};
     const useStyles = makeStyles(() => ({
         root: {
-            height: '100vh',
-            width: "60vw"
+            // height: '100vh',
+            // width: "60vw"
         }
     }))
     const classes = useStyles();
