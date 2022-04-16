@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-
+import ContactForm from '../components/ContactForm';
 const Item = styled(Paper)(({ theme }) => ({
 
   padding: theme.spacing(15),
@@ -35,6 +35,7 @@ const Contact = () => {
           <Grid item xs={12}>
             <Item>
               contact form
+              <ContactForm />
             </Item>
           </Grid>
         </Grid>
