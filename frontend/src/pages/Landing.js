@@ -60,7 +60,7 @@ const Landing = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: "100vh",
+            height: "97.6vh",
             backgroundColor: "black" ,
             backgroundPosition: "center",
             backgroundSize: "cover",
