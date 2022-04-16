@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 const Menu = () => {
   const [items, setItems] = useState([]);
-  
+
   useEffect(() => {
     axios.get("http://localhost:1337/api/items?populate=*").then((res) => {
       setItems(res?.data?.data);
@@ -12,6 +12,9 @@ const Menu = () => {
 
   return (
     <div>
+      {items.length === 0 && (
+        <p>If you see this, then the backend is not being run.</p>
+      )}
       {items.map((item) => {
         const itemAttributes = item.attributes;
         return (
