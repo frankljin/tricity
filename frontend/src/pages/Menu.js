@@ -11,10 +11,11 @@ const Menu = () => {
   }, []);
 
   return (
-    <div>
+    <main>
       {items.length === 0 && (
         <p>If you see this, then the backend is not being run.</p>
       )}
+      <h1>Menu</h1>
       {items.map((item) => {
         const itemAttributes = item.attributes;
         return (
@@ -23,7 +24,7 @@ const Menu = () => {
           </div>
         );
       })}
-    </div>
+    </main>
   );
 };
 

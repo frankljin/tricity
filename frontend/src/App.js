@@ -12,15 +12,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <Router>
-      <main>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </Router>
   );
 };
