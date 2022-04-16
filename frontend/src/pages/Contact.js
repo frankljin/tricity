@@ -21,7 +21,7 @@ const Contact = () => {
         border: 0,
         boxShadow: 0 
       }}>
-        <Grid container rowSpacing={8} columnSpacing={7}>
+        <Grid container rowSpacing={8} columnSpacing={7} marginTop = "10px">
           <Grid item xs={12} sm={4.5}>
             <Item>
               info
