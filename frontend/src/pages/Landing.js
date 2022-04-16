@@ -18,7 +18,7 @@ function IconImg(props) {
             "&.MuiButton-root": {
                 border: "2px white solid",
                 fontSize: "1.7vh",
-                fontFamily: "Signika",
+               
 
             },
 
@@ -31,11 +31,8 @@ function IconImg(props) {
     if (props.width < 600) {
         return (
             <div >
+              <MenuIcon  fontSize = "large"/>
 
-                    <MenuIcon  fontSize = "large"/>
-
-
-                
             </div>
         )
     } else {
