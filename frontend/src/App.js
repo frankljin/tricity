@@ -1,27 +1,26 @@
 import "./App.css";
-import axios from "axios";
-import { useState, useEffect } from "react";
+import Landing from "./pages/Landing";
+import About from "./pages/About";
+import Menu from "./pages/Menu";
+import Contact from "./pages/Contact";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
-  const [items, setItems] = useState([]);
-  useEffect(() => {
-    axios.get("http://localhost:1337/api/items?populate=*").then((res) => {
-      setItems(res?.data?.data);
-    });
-  }, []);
-
   return (
-    <div>
-      {items.map((item) => {
-        const itemAttributes = item.attributes;
-        return (
-          <div>
-            <p>{JSON.stringify(itemAttributes)}</p>
-      
-          </div>
-        );
-      })}
-    </div>
+    <Router>
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/menu">Menu</Link>
+        <Link to="/contact">Contact</Link>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
