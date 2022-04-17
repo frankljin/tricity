@@ -45,13 +45,19 @@ const Menu = () => {
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <ItemMapper items={items} foodType="Sashimi" />
+        <Grid container spacing={2}>
+          <ItemMapper items={items} foodType="Sashimi" />
+        </Grid>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <ItemMapper items={items} foodType="Main" />
+        <Grid container spacing={2}>
+          <ItemMapper items={items} foodType="Main" />
+        </Grid>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <ItemMapper items={items} foodType="Drink" />
+        <Grid container spacing={2}>
+          <ItemMapper items={items} foodType="Drink" />
+        </Grid>
       </TabPanel>
     </main>
   );
