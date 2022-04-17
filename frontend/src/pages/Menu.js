@@ -48,10 +48,10 @@ const Menu = () => {
         <ItemMapper items={items} foodType="Sashimi" />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        <ItemMapper items={items} foodType="Mains" />
+        <ItemMapper items={items} foodType="Main" />
       </TabPanel>
       <TabPanel value={value} index={3}>
-        <ItemMapper items={items} foodType="Drinks" />
+        <ItemMapper items={items} foodType="Drink" />
       </TabPanel>
     </main>
   );

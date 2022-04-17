@@ -57,10 +57,9 @@ const Landing = () => {
       justifyContent: "center",
       alignItems: "center",
       height: "97.6vh",
-      backgroundColor: "black",
+      backgroundImage: 'url("https://norecipes.com/wp-content/uploads/2020/10/salmon-rice-008-1200x800.jpg")',
       backgroundPosition: "center",
       backgroundSize: "cover",
-      fontFamily: "Signika",
     },
     appbar: {
       background: "none",
@@ -75,9 +74,10 @@ const Landing = () => {
       fontSize: "3vh",
     },
     maintitle: {
-      fontSize: "7vh",
+      fontSize: "10vh",
       color: "#ffff",
       marginTop: "-5vh",
+      width: "70%"
     },
     bottomTitle: {
       display: "flex",
@@ -87,7 +87,6 @@ const Landing = () => {
       color: "#ffff",
       marginTop: "0",
       flex: "1",
-      textDecoration: "underline",
     },
   }));
 
@@ -97,9 +96,15 @@ const Landing = () => {
     <div className={classes.root}>
       <main>
         <Box>
-          <h1 className={classes.maintitle}>Resturant Name</h1>
+          <h1 className={classes.maintitle}>Tricity Japanese Salmon Bowl</h1>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.subTitle}>Take Out</h2>
+            <h2 className={classes.subTitle}>About</h2>
+          </div>
+          <div className={classes.bottomTitle}>
+            <h2 className={classes.subTitle}>Menu</h2>
+          </div>
+          <div className={classes.bottomTitle}>
+            <h2 className={classes.subTitle}>Contact</h2>
           </div>
           <div className={classes.bottomTitle}>
             <h2 className={classes.subTitle}>Order</h2>
