@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import ContactForm from '../components/ContactForm';
 
 const Item = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(45),
+  padding: theme.spacing(15),
   textAlign: 'center',
 }));
 

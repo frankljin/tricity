@@ -9,8 +9,5 @@
     "server": "cd backend && npm run develop"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "react": "^18.0.0"
-  }
+  "license": "ISC"
 }
