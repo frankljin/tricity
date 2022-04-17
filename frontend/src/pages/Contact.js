@@ -4,9 +4,11 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import ContactForm from '../components/ContactForm';
+import TricityMap from '../components/Map';
+import {InfoWindow, Marker, Map, GoogleApiWrapper} from 'google-maps-react';
 
 const Item = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(45),
+  padding: theme.spacing(25),
   textAlign: 'center',
 }));
 
@@ -24,8 +26,8 @@ const Contact = () => {
             </Item>
           </Grid>
           <Grid item xs={12} sm={7}>
-            <Item>
-              map
+            <Item xs={12}>
+              <TricityMap />
             </Item>
           </Grid>
           <Grid item xs={12}>
