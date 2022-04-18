@@ -11,8 +11,8 @@ const Footer = () => {
                 <div className={styles.footerCol}>
                     <h4>Locations & hours</h4>
                     <ul>
-                        <li><a>location</a></li>
-                        <li><a>9am-12pm</a></li>
+                        <li><a>990 Bishop St N<br /> Cambridge, ON N3H 4W5<br /> Canada</a></li>
+                        <li><a>12-9pm daily</a></li>
                     </ul>
                 </div>
                 <div className={styles.footerCol}>
@@ -20,16 +20,15 @@ const Footer = () => {
                     <ul>
                         <li><a><NavLink to={"/about"}>about us </NavLink></a></li>
                         <li><a onClick={() => window.open("mailto:idktheiremail@gmail.com")}>Email</a></li>
-                        <li><a onClick={() => window.open("tel:6966966969")}>phone</a></li>
+                        <li><a onClick={() => window.open("tel:5482550431")}>phone</a></li>
                     </ul>
                 </div>
                 <div className={styles.footerCol}>
                     <h4>Order</h4>
                     <ul>
-                        <li><a href="">idk</a></li>
-                        <li><a href="">what</a></li>
-                        <li><a href="">to</a></li>
-                        <li><a href="">put</a></li>
+                        <li><a href="https://www.ubereats.com/ca/store/tricity-japanese-salmon-bowl/WvSDddCeWYyigU1N0G8KJw?utm_source=google&utm_medium=organic&utm_campaign=place-action-link">Uber Eats</a></li>
+                        <li><a href="https://www.skipthedishes.com/tricity-japanese-salmon-bowl?utm_source=google&utm_medium=organic&utm_campaign=gpa">Skip The Dishes</a></li>
+                        <li><a href="https://www.doordash.com/en-CA/store/tricity-japanese-salmon-bowl-cambridge-23025709/?utm_campaign=gpa">DoorDash</a></li>
                     </ul>
                 </div>
                 {/* <div className={styles.footerCol}>
@@ -43,7 +42,7 @@ const Footer = () => {
                 </div> */}
             </div>
             <div className={styles.madeBy}>
-                <p>Website made by SARC media</p>
+                <p>Website made by SARC Labs</p>
             </div>
         </div>
     </footer>
