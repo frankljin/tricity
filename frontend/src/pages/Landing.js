@@ -3,6 +3,9 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from "react-router-dom";
+
+
 
 function IconImg(props) {
   const useStyles = makeStyles(() => ({
@@ -85,9 +88,23 @@ const Landing = () => {
     subTitle: {
       fontSize: "3vh",
       color: "#ffff",
-      marginTop: "0",
+      marginTop: "0px",
       flex: "1",
+      fontWeight: "bold",
+      transition: "text-decoration-color cubic-bezier(.17,.67,.29,.9) 0.4s",
+      textDecorationColor: "transparent",
+      "&:hover":{
+        textDecorationColor: "#ffffff",
+      }
     },
+    hContainer: {
+      margin: "7px",
+      transition: "transform cubic-bezier(.17,.67,.29,.9) 0.3s",
+      "&:hover":{
+        transform: "translateX(15%)",
+      }
+      
+    }
   }));
 
   const classes = useStyles();
@@ -98,16 +115,16 @@ const Landing = () => {
         <Box>
           <h1 className={classes.maintitle}>Tricity Japanese Salmon Bowl</h1>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.subTitle}>About</h2>
+            <h2 className={classes.hContainer}><NavLink to={"/about"} className={classes.subTitle}>About</NavLink></h2>
           </div>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.subTitle}>Menu</h2>
+            <h2 className={classes.hContainer}><NavLink to={"/menu"}className={classes.subTitle}>Menu</NavLink></h2>
           </div>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.subTitle}>Contact</h2>
+            <h2 className={classes.hContainer}><NavLink to={"/contact"} h2 className={classes.subTitle}>Contact</NavLink></h2>
           </div>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.subTitle}>Order</h2>
+            <h2 className={classes.hContainer}><NavLink to={"/menu"} h2 className={classes.subTitle}>Order</NavLink></h2>
           </div>
         </Box>
       </main>
