@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../styles/footer.module.css"  
+import styles from "../styles/Footer.module.css"  
 import { NavLink } from "react-router-dom";
 
 
@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className={styles.footerCol}>
                     <h4>Locations & hours</h4>
                     <ul>
-                        <li><a>990 Bishop St N<br /> Cambridge, ON N3H 4W5<br /> Canada</a></li>
+                        <li><a href="https://goo.gl/maps/4GAM2MXcJXRuFPrN9">990 Bishop St N<br /> Cambridge, ON N3H 4W5<br /> Canada</a></li>
                         <li><a>12-9pm daily</a></li>
                     </ul>
                 </div>
