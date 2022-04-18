@@ -71,12 +71,9 @@ function ContactForm() {
     }))
     const classes = useStyles();
     return (
-        <div className = {classes.root}>
-            
+        <div className = {classes.root}>     
           <CardContent>
-            <Typography gutterBottom variant="h3">
-              Contact Us
-          </Typography> 
+            <h1>Contact Us</h1>
             <form>
               <Grid container spacing={1}>
                 <Grid xs={12} sm={6} item>
