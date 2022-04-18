@@ -22,7 +22,7 @@ const Contact = () => {
         <Grid container rowSpacing={1} columnSpacing={1} alignItems="center">
           <Grid item xs={12} sm={5} style={{height: "50vh"}}>
             <h1>Location</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Tricity Japanese Salmon Bowl offers an authentic taste of Japan, serving an assortment of beautifully balanced donburi and other classics of the cuisine. Located just off the bustling Highway 24, this hidden gem of Cambridge boasts freshly sourced ingredients, served in a familiar setting. Situated in a prime central location with seamless transit access, you won’t want to miss the taste of Japan here!</p>
           </Grid>
           <Grid item xs={12} sm={7} style={{position: 'relative', height: '50vh'}}>
              <TricityMap />
