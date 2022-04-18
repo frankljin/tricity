@@ -62,7 +62,7 @@ ul{
 	cursor: pointer;
 	color: var(--linkHover);
 	font-weight: 400;
-	padding-left: 8px; 
+	transform: translateX(8px); 
 	text-decoration-color: var(--linkHover);
 }
 .footerCol .social-links a{

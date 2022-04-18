@@ -1,7 +1,6 @@
 import React from 'react'
-import styles from "../styles/footer.module.css"  
+import styles from "../styles/Footer.module.css"  
 import { NavLink } from "react-router-dom";
-import { Button } from "@mui/material";
 
 
 const Footer = () => {
@@ -27,7 +26,7 @@ const Footer = () => {
                 <div className={styles.footerCol}>
                     <h4>Order</h4>
                     <ul>
-                        <li><a href=""><p>idk</p></a></li>
+                        <li><a href="">idk</a></li>
                         <li><a href="">what</a></li>
                         <li><a href="">to</a></li>
                         <li><a href="">put</a></li>
