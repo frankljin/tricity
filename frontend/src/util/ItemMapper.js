@@ -8,7 +8,7 @@ const ItemMapper = ({ items, foodType }) => {
     const itemAttributes = item.attributes;
     if (itemAttributes.Category === foodType) {
       itemsToShow.push(
-        <Grid item xs={3}>
+        <Grid item xs={3} style={{ display: "flex" }}>
           <ItemCard
             name={itemAttributes.Name}
             description={itemAttributes.Description}

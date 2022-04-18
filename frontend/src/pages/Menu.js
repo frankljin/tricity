@@ -34,24 +34,24 @@ const Menu = () => {
       )}
       <h1>Menu</h1>
       <Tabs value={value} onChange={handleChange} centered>
-        <Tab label="Appetizers" {...allyProps(0)} />
-        <Tab label="Sashimi" {...allyProps(1)} />
-        <Tab label="Mains" {...allyProps(2)} />
+        <Tab label="Mains" {...allyProps(0)} />
+        <Tab label="Appetizers" {...allyProps(1)} />
+        <Tab label="Sashimi" {...allyProps(2)} />
         <Tab label="Drinks" {...allyProps(3)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <Grid container spacing={2}>
-          <ItemMapper items={items} foodType="Appetizer" />
+          <ItemMapper items={items} foodType="Main" />
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <Grid container spacing={2}>
-          <ItemMapper items={items} foodType="Sashimi" />
+          <ItemMapper items={items} foodType="Appetizer" />
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Grid container spacing={2}>
-          <ItemMapper items={items} foodType="Main" />
+          <ItemMapper items={items} foodType="Sashimi" />
         </Grid>
       </TabPanel>
       <TabPanel value={value} index={3}>

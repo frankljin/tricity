@@ -1,8 +1,15 @@
-import { Card, CardActions, CardContent, CardMedia, Button, Typography } from "@mui/material";
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+} from "@mui/material";
 
 const ItemCard = ({ name, description, image, price }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: 345 }}>
       <CardMedia component="img" height="200" image={image} alt={name} />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
