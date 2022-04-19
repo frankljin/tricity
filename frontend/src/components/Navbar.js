@@ -1,5 +1,13 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Button } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Menu,
+  MenuItem,
+} from "@mui/material";
 
 const styles = {
   "&.MuiButton-contained": {
@@ -10,6 +18,16 @@ const styles = {
 };
 
 const Navbar = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <AppBar
       position="static"
@@ -57,6 +75,58 @@ const Navbar = () => {
         >
           Contact
         </Button>
+        <Button
+          color="inherit"
+          onClick={handleMenu}
+          sx={styles}
+          variant="contained"
+          aria-haspopup="true"
+        >
+          Order
+        </Button>
+        <Menu
+          id="menu-appbar"
+          anchorEl={anchorEl}
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+          keepMounted
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem onClick={handleClose}>
+            <a
+              href="https://www.ubereats.com/ca/store/tricity-japanese-salmon-bowl/WvSDddCeWYyigU1N0G8KJw"
+              style={{ textDecoration: "none", color: "black" }}
+              target="_blank"
+            >
+              Uber Eats
+            </a>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <a
+              href="https://www.skipthedishes.com/tricity-japanese-salmon-bowl"
+              style={{ textDecoration: "none", color: "black" }}
+              target="_blank"
+            >
+              Skip the Dishes
+            </a>
+          </MenuItem>
+          <MenuItem onClick={handleClose}>
+            <a
+              href="https://www.doordash.com/store/tricity-japanese-salmon-bowl-cambridge-23025709/"
+              style={{ textDecoration: "none", color: "black" }}
+              target="_blank"
+            >
+              DoorDash
+            </a>
+          </MenuItem>
+        </Menu>
       </Toolbar>
     </AppBar>
   );

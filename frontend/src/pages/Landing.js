@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 
-
-
 function IconImg(props) {
   const useStyles = makeStyles(() => ({
     contact: {
@@ -60,7 +58,16 @@ const Landing = () => {
       justifyContent: "center",
       alignItems: "center",
       height: "97.6vh",
-      backgroundImage: 'url("https://norecipes.com/wp-content/uploads/2020/10/salmon-rice-008-1200x800.jpg")',
+      //   backgroundImage: 'url("https://norecipes.com/wp-content/uploads/2020/10/salmon-rice-008-1200x800.jpg")',
+      background: "hsla(187, 83%, 65%, 1)",
+      background:
+        "linear-gradient(0deg, hsla(187, 83%, 65%, 1) 0%, hsla(301, 84%, 81%, 1) 34%, hsla(347, 75%, 61%, 1) 100%)",
+      background:
+        "-moz-linear-gradient(0deg, hsla(187, 83%, 65%, 1) 0%, hsla(301, 84%, 81%, 1) 34%, hsla(347, 75%, 61%, 1) 100%)",
+      background:
+        "-webkit-linear-gradient(0deg, hsla(187, 83%, 65%, 1) 0%, hsla(301, 84%, 81%, 1) 34%, hsla(347, 75%, 61%, 1) 100%)",
+      filter:
+        "progid: DXImageTransform.Microsoft.gradient( startColorstr='#5DE0F0', endColorstr='#F7A6F5', GradientType=1 )",
       backgroundPosition: "center",
       backgroundSize: "cover",
     },
@@ -80,7 +87,7 @@ const Landing = () => {
       fontSize: "10vh",
       color: "#ffff",
       marginTop: "-5vh",
-      width: "70%"
+      width: "70%",
     },
     bottomTitle: {
       display: "flex",
@@ -93,18 +100,17 @@ const Landing = () => {
       fontWeight: "bold",
       transition: "text-decoration-color cubic-bezier(.17,.67,.29,.9) 0.4s",
       textDecorationColor: "transparent",
-      "&:hover":{
+      "&:hover": {
         textDecorationColor: "#ffffff",
-      }
+      },
     },
     hContainer: {
       margin: "7px",
       transition: "transform cubic-bezier(.17,.67,.29,.9) 0.3s",
-      "&:hover":{
+      "&:hover": {
         transform: "translateX(15%)",
-      }
-      
-    }
+      },
+    },
   }));
 
   const classes = useStyles();
@@ -115,16 +121,25 @@ const Landing = () => {
         <Box>
           <h1 className={classes.maintitle}>Tricity Japanese Salmon Bowl</h1>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.hContainer}><NavLink to={"/about"} className={classes.subTitle}>About</NavLink></h2>
+            <h2 className={classes.hContainer}>
+              <NavLink to={"/about"} className={classes.subTitle}>
+                About
+              </NavLink>
+            </h2>
           </div>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.hContainer}><NavLink to={"/menu"}className={classes.subTitle}>Menu</NavLink></h2>
+            <h2 className={classes.hContainer}>
+              <NavLink to={"/menu"} className={classes.subTitle}>
+                Menu
+              </NavLink>
+            </h2>
           </div>
           <div className={classes.bottomTitle}>
-            <h2 className={classes.hContainer}><NavLink to={"/contact"} h2 className={classes.subTitle}>Contact</NavLink></h2>
-          </div>
-          <div className={classes.bottomTitle}>
-            <h2 className={classes.hContainer}><NavLink to={"/menu"} h2 className={classes.subTitle}>Order</NavLink></h2>
+            <h2 className={classes.hContainer}>
+              <NavLink to={"/contact"} h2 className={classes.subTitle}>
+                Contact
+              </NavLink>
+            </h2>
           </div>
         </Box>
       </main>
