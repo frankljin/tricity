@@ -1,11 +1,7 @@
-import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import ContactForm from '../components/ContactForm';
 import TricityMap from '../components/Map';
-import {InfoWindow, Marker, Map, GoogleApiWrapper} from 'google-maps-react';
 import Typography from '@mui/material/Typography';
 
 // const Item = styled(Paper)(({ theme }) => ({

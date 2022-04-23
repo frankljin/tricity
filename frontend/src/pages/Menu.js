@@ -29,9 +29,6 @@ const Menu = () => {
 
   return (
     <main>
-      {items.length === 0 && (
-        <p>If you see this, then the backend is not being run.</p>
-      )}
       <h1>Menu</h1>
       <Tabs value={value} onChange={handleChange} centered>
         <Tab label="Mains" {...allyProps(0)} />

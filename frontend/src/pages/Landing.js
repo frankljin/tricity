@@ -120,13 +120,13 @@ const Landing = () => {
       <main>
         <Box>
           <h1 className={classes.maintitle}>Tricity Japanese Salmon Bowl</h1>
-          <div className={classes.bottomTitle}>
+          {/* <div className={classes.bottomTitle}>
             <h2 className={classes.hContainer}>
               <NavLink to={"/about"} className={classes.subTitle}>
                 About
               </NavLink>
             </h2>
-          </div>
+          </div> */}
           <div className={classes.bottomTitle}>
             <h2 className={classes.hContainer}>
               <NavLink to={"/menu"} className={classes.subTitle}>

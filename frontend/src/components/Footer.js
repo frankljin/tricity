@@ -18,8 +18,8 @@ const Footer = () => {
                 <div className={styles.footerCol}>
                     <h4>contact</h4>
                     <ul>
-                        <li><a><NavLink to={"/about"}>about us </NavLink></a></li>
-                        <li><a onClick={() => window.open("mailto:idktheiremail@gmail.com")}>Email</a></li>
+                        {/* <li><a><NavLink to={"/about"}>about us </NavLink></a></li> */}
+                        <li><a onClick={() => window.open("mailto:tjsalmonbowl@gmail.com")}>Email</a></li>
                         <li><a onClick={() => window.open("tel:5482550431")}>phone</a></li>
                     </ul>
                 </div>
