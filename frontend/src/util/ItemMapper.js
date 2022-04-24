@@ -13,7 +13,7 @@ const ItemMapper = ({ items, foodType }) => {
             name={itemAttributes.Name}
             description={itemAttributes.Description}
             image={
-              "http://localhost:1337" +
+              "https://stark-dusk-10281.herokuapp.com" +
               itemAttributes.Image.data.attributes.formats.large.url
             }
             price={itemAttributes.Price}
