@@ -15,7 +15,7 @@ const Menu = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:1337/api/items?populate=*").then((res) => {
+    axios.get("https://stark-dusk-10281.herokuapp.com/api/items?populate=*").then((res) => {
       setItems(res?.data?.data);
     });
   }, []);
@@ -23,14 +23,14 @@ const Menu = () => {
   const allyProps = (index) => {
     return {
       id: `simple-tab-${index}`,
-      "aria-controls": `simple-tabpanel-${index}`,
+      "aria-controls": `simple-tabpanel-${index}`
     };
   };
 
   return (
     <main>
       <h1>Menu</h1>
-      <Tabs value={value} onChange={handleChange} centered>
+      <Tabs variant="scrollable" value={value} onChange={handleChange} centered>
         <Tab label="Mains" {...allyProps(0)} />
         <Tab label="Appetizers" {...allyProps(1)} />
         <Tab label="Sashimi" {...allyProps(2)} />
