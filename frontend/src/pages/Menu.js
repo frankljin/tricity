@@ -7,18 +7,61 @@ import { useState, useEffect } from "react";
 import { Tabs, Tab, Grid } from "@mui/material";
 
 const Menu = () => {
-  const [items, setItems] = useState([]);
+  const items = [
+    {
+      attributes: {
+        Category: "Main",
+        Name:"Ebidon",
+        Price:9.99,
+      }
+    },
+    {
+      attributes: {
+        Category: "Main",
+        Name:"Salmon Don",
+        Price:10.99,
+      }
+    },
+    {
+      attributes: {
+        Category: "Main",
+        Name:"Shrimp Tempura",
+        Price:11.99,
+      }
+    },
+    {
+      attributes: {
+        Category: "Main",
+        Name:"Spicy Salmon Don",
+        Price:15.99,
+      }
+    },
+    {
+      attributes: {
+        Category: "Main",
+        Name:"Yakitori Don",
+        Price:13.99,
+      }
+    },
+    {
+      attributes: {
+        Category: "Main",
+        Name:"Zuke Don",
+        Price:12.99,
+      }
+    },
+  ];
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
-  useEffect(() => {
-    axios.get("https://stark-dusk-10281.herokuapp.com/api/items?populate=*").then((res) => {
-      setItems(res?.data?.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("https://stark-dusk-10281.herokuapp.com/api/items?populate=*").then((res) => {
+  //     setItems(res?.data?.data);
+  //   });
+  // }, []);
 
   const allyProps = (index) => {
     return {
